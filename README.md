@@ -1,0 +1,2 @@
+# mynvim
+neo vim config
