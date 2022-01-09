@@ -41,7 +41,7 @@ local options = {
 
   termguicolors = true,
   colorcolumn = "100",
-
+  nrformats = "",                          -- treat all numerals as decimals regardless of leading 0's. Helpful with <C-a> commands
 }
 
 for k, v in pairs(options) do
@@ -49,6 +49,10 @@ for k, v in pairs(options) do
 end
 
 cmd "highlight ColorColumn ctermbg=0 guibg=lightgrey"
+
+-- Show terminal cursor in terminal mode
+cmd "highlight! link TermCursor Cursor"
+cmd "highlight! TermCursorNC guibg=pink guifg=white ctermbg=1 ctermfg=15"
 
 if vim.env.TMUX then
   -- TMUX specific
