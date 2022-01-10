@@ -10,9 +10,9 @@ if not status_ok then
   return
 end
 
-local status_ok, handlers = pcall(require, "me.lsp.handler-foo")
+local status_ok, handlers = pcall(require, "me.lsp.handlers")
 if not status_ok then
-  print("me.lsp.handler-foo fail")
+  print("me.lsp.handlers fail")
   return
 end
 
