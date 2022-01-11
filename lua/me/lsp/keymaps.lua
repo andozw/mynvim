@@ -12,7 +12,7 @@ M.set_maps = function (bufnr)
         ["<leader>rn"] = "vim.lsp.buf.rename()",
         ["gr"] = "vim.lsp.buf.references()",
         ["<leader>ca"] = "vim.lsp.buf.code_action()",
-        ["<leader>f"] = "vim.diagnostic.open_float()",
+        ["<leader>i"] = "vim.diagnostic.open_float()",
         ["[d"] = 'vim.diagnostic.goto_prev({ border = "rounded" })',
         ["gl"] = 'vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })',
         ["]d"] = 'vim.diagnostic.goto_next({ border = "rounded" })',
