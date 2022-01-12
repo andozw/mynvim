@@ -45,6 +45,9 @@ k("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 -- Glow markdown preview
 k("n", "<leader>m", ":w<CR>:Glow<CR>", opts)
 
+-- Undo tree
+k("n", "<F5>", ":UndotreeToggle<CR>", opts)
+
 ------------
 -- Visual --
 ------------

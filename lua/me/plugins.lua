@@ -81,6 +81,9 @@ return packer.startup(function(use)
     -- Markdown Preview
     use "ellisonleao/glow.nvim"
 
+    -- Undo tree viewer
+    use "mbbill/undotree"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
