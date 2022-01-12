@@ -42,6 +42,9 @@ k("n", "<C-k>", "<C-l><Esc>:m .-2<CR>==", opts)
 k("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 k("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Glow markdown preview
+k("n", "<leader>m", ":w<CR>:Glow<CR>", opts)
+
 ------------
 -- Visual --
 ------------

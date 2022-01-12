@@ -78,6 +78,9 @@ return packer.startup(function(use)
     }
     use "nvim-treesitter/playground"
 
+    -- Markdown Preview
+    use "ellisonleao/glow.nvim"
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
