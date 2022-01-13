@@ -48,6 +48,9 @@ k("n", "<leader>m", ":w<CR>:Glow<CR>", opts)
 -- Undo tree
 k("n", "<F5>", ":UndotreeToggle<CR>", opts)
 
+-- Nerd Commenter
+k("n", "<leader>k", "<plug>NERDCommenterToggle<CR>k", opts)
+
 ------------
 -- Visual --
 ------------
@@ -58,6 +61,9 @@ k("v", ">", ">gv", sopts)
 -- Move line
 k("v", "<C-j>", ":m .+1<CR>==", sopts)
 k("v", "<C-k>", ":m .-2<CR>==", sopts)
+
+-- Nerd Commenter
+k("v", "<leader>k", "<plug>NERDCommenterToggle<CR>k", opts)
 
 ------------------
 -- Visual Block --
