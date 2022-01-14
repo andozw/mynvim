@@ -49,7 +49,7 @@ k("n", "<leader>m", ":w<CR>:Glow<CR>", opts)
 k("n", "<F5>", ":UndotreeToggle<CR>", opts)
 
 -- Nerd Commenter
-k("n", "<leader>k", "<plug>NERDCommenterToggle<CR>k", opts)
+k("n", "<leader>k", "<plug>NERDCommenterToggle<CR>k", {})
 
 ------------
 -- Visual --
