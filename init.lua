@@ -1,6 +1,7 @@
 require "me.options"
 require "me.keymaps"
 require "me.plugins"
+require "me.directory_overrides"
 require "me.colorme"
 require "me.cmp"
 require "me.lsp"

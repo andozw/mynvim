@@ -15,6 +15,9 @@ k("n", "<leader>c", ":w !wc<CR>", opts)
 -- Set textwidth
 k("n", "<leader>tw", ":set textwidth=100<CR>", opts)
 
+-- Set textwidth
+k("n", "<leader>tt", ":set noexpandtab<CR>", opts)
+
 -- Mute highlighting for this search only
 k("n", "<C-l>", ":<C-u>nohlsearch<CR><C-l>", opts)
 
