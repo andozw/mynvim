@@ -3,6 +3,8 @@ local sopts = { noremap = true, silent = true }
 
 -- local term_opts = { silent = true }
 
+-- TODO: include the lsp keymaps in lua/me/lsp/keymaps.lua with these.
+
 local k = vim.api.nvim_set_keymap
 
 k("", "<space>", "<nop>", opts)
