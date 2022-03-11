@@ -37,7 +37,7 @@ k("n", "<S-Tab>", ":bprevious<CR>", sopts)
 
 -- Toggle windows
 k("n", "<C-h>", "<C-w>w", sopts)
-k("n", "<leader>w", "<C-w>w", sopts)
+k("n", "<leader><space>", "<C-w>w", sopts)
 
 -- Move line
 k("n", "<C-j>", "<C-l><Esc>:m .+1<CR>==", opts)
