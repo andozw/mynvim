@@ -25,6 +25,10 @@ k("n", "<C-l>", ":<C-u>nohlsearch<CR><C-l>", opts)
 
 k("n", "<leader>e", ":Lex 30<CR>", sopts)
 
+-- Search for current selection (overcomes limitations with special characters)
+k("x", "*", ":<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>", opts)
+k("x", "#", ":<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>", opts)
+
 -- Resize with shift + arrows
 k("n", "<S-Up>", ":resize -2<CR>", sopts)
 k("n", "<S-Down>", ":resize +2<CR>", sopts)
