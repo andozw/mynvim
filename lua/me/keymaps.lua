@@ -25,6 +25,9 @@ k("n", "<C-l>", ":<C-u>nohlsearch<CR><C-l>", opts)
 
 k("n", "<leader>e", ":Lex 30<CR>", sopts)
 
+-- Save
+k("n", "<leader>s", ":w", sopts)
+
 -- Search for current selection (overcomes limitations with special characters)
 k("x", "*", ":<C-u>call s:VSetSearch()<CR>/<C-R>=@/<CR><CR>", opts)
 k("x", "#", ":<C-u>call s:VSetSearch()<CR>?<C-R>=@/<CR><CR>", opts)
@@ -41,7 +44,7 @@ k("n", "<S-Tab>", ":bprevious<CR>", sopts)
 
 -- Toggle windows
 k("n", "<C-h>", "<C-w>w", sopts)
-k("n", "<leader><space>", "<C-w>w", sopts)
+k("n", "<leader>b", "<C-w>w", sopts)
 
 -- Move line
 k("n", "<C-j>", "<C-l><Esc>:m .+1<CR>==", opts)
