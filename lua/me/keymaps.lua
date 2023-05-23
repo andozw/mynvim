@@ -26,7 +26,7 @@ k("n", "<C-l>", ":<C-u>nohlsearch<CR><C-l>", opts)
 k("n", "<leader>e", ":Lex 30<CR>", sopts)
 
 -- Save
-k("n", "<leader>s", ":w", sopts)
+k("n", "<leader>s", ":w<CR>", sopts)
 
 -- Search for current selection (overcomes limitations with special characters)
 k("x", "*", ":<C-u>call s:VSetSearch()<CR>/<C-R>=@/<CR><CR>", opts)
